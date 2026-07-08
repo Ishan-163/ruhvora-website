@@ -1054,3 +1054,19 @@ text-transform:uppercase;
 opacity:0;
 visibility:hidden;
 }
+.product-price{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.old-price{
+    color: #888;
+    text-decoration: line-through;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.new-price{
+    color: #000;
+    font-size: 2rem;
+    font-weight: 700;
+}

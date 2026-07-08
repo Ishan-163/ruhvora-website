@@ -17,13 +17,18 @@ thumbnails.forEach((thumb) => {
 
 const sizeButtons = document.querySelectorAll(".size-btn");
 const price = document.getElementById("productPrice");
-sizeButtons.forEach((button)=>{
-    button.addEventListener("click",()=>{
-        sizeButtons.forEach(btn=>{
-            btn.classList.remove("active");
-        });
+
+sizeButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+        sizeButtons.forEach(btn => btn.classList.remove("active"));
         button.classList.add("active");
-        price.innerText="₹"+button.dataset.price;
+
+        let oldPrice = button.dataset.size === "20" ? "499" : "999";
+
+        price.innerHTML = `
+            <span class="old-price">₹${oldPrice}</span>
+            <span class="new-price">₹${button.dataset.price}</span>
+        `;
     });
 });
 

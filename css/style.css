@@ -1066,7 +1066,7 @@ visibility:hidden;
     font-weight: 400;
 }
 .new-price{
-    color: #000;
+    color: var(--gold);
     font-size: 2rem;
     font-weight: 700;
 }

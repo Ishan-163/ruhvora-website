@@ -203,6 +203,28 @@ gap:40px;
 .nav-links.active{
     right:0;
 }
+.product-page{
+        display:flex;
+        flex-direction:column;
+    }
+
+    .product-left{
+        display:contents;
+    }
+
+    .product-gallery{
+        order:1;
+    }
+
+    .product-right{
+        order:2;
+    }
+
+    .product-features{
+        order:3;
+    }
+
+}
 
 /*==============================
         SMALL MOBILE
